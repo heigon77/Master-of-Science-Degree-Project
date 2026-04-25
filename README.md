@@ -124,7 +124,9 @@ Performance is measured as top-1, top-2, and top-3 accuracy against the actual h
 
 ## Datasets
 
-The `Datasets/` directory is **not included** in this repository due to file size constraints.
+The `Datasets/` directory is **not included** in this repository due to file size constraints. The data is publicly available on Kaggle:
+
+> 📦 **[chess-moves-from-lichess-with-3d-boards](https://www.kaggle.com/datasets/heigonsoldera/chess-moves-from-lichess-with-3d-boards)**
 
 The pipeline expects the following data:
 
@@ -144,12 +146,10 @@ The pipeline expects the following data:
 ## Dependencies
 
 ```bash
-pip install torch torchvision
-pip install opencv-python
-pip install python-chess
-pip install stockfish
-pip install pandas numpy matplotlib seaborn scikit-learn
-pip install torch-snippets
+pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0+cu124 \
+    --index-url https://download.pytorch.org/whl/cu124
+
+pip install -r requirements.txt
 ```
 
 The Stockfish binary for Linux x86-64 (AVX2) is included in `stockfish/`. For other platforms, download from [stockfishchess.org/download](https://stockfishchess.org/download/).
