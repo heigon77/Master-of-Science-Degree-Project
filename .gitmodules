@@ -1,0 +1,3 @@
+[submodule "Chess-Vision-Frontend"]
+	path = Chess-Vision-Frontend
+	url = https://github.com/heigon77/Chess-Vision-Frontend

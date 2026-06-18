@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Stockfish binary (installed via apt in Docker / downloaded locally)
+stockfish/stockfish
+stockfish/*.tar
+
+# Local sample images / scratch
+samples/
+/tmp/
+
+# NOTE: models_onnx/ IS committed (the API needs the ONNX weights).

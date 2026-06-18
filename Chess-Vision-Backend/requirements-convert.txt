@@ -1,0 +1,6 @@
+# Only needed to convert the .pth models to ONNX (convert_to_onnx.py).
+# The runtime backend does NOT need torch — it serves the ONNX models.
+torch>=2.2
+torchvision>=0.17
+onnx>=1.16
+onnxruntime>=1.18

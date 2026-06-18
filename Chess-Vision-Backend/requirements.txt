@@ -1,0 +1,9 @@
+# Runtime serving stack (no torch — serves the ONNX models).
+fastapi>=0.110
+uvicorn[standard]>=0.29
+onnxruntime>=1.18
+opencv-python-headless>=4.9
+numpy>=1.26
+python-chess>=1.999
+stockfish>=3.28
+python-multipart>=0.0.9
